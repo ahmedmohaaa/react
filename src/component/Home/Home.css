@@ -1,0 +1,230 @@
+/* === الصفحة الأساسية === */
+.container {
+  text-align: center;
+  padding: 50px;
+  font-family: "Cairo", sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00c4ff;
+  animation: fadeUp 2s ease-in-out infinite;
+}
+
+.header img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* === About === */
+.mid {
+  margin-top: 40px;
+  padding: 40px 90px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  font-weight: 600;
+  line-height: 2;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* === Services === */
+.services {
+  margin-top: 80px;
+}
+
+.services h2 {
+  color: #00c4ff;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+}
+
+/* === Portfolio === */
+.portfolio {
+  margin-top: 100px;
+}
+
+.portfolio h2 {
+  color: #00c4ff;
+  margin-bottom: 30px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px 30px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.project:hover {
+  background-color: #00c4ff;
+  color: #0a0a44;
+  font-weight: bold;
+}
+
+/* === Contact === */
+.contact {
+  margin-top: 80px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+}
+
+.contact h2 {
+  color: #00c4ff;
+  margin-bottom: 20px;
+}
+
+/* === Testimonials === */
+.testimonials {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+.testimonials h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #00c4ff;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.1);
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  color: #00c4ff;
+  font-weight: 600;
+}
+
+/* === Animation === */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header img {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+
+  .mid {
+    padding: 30px 40px;
+  }
+
+  .service-cards,
+  .projects,
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .testimonial,
+  .project {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .mid {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .services h2,
+  .portfolio h2,
+  .contact h2,
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .card,
+  .testimonial,
+  .project {
+    width: 100%;
+  }
+}

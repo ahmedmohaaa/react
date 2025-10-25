@@ -1,0 +1,75 @@
+.all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-image: linear-gradient(rgb(15, 87, 116), rgb(6, 6, 78));
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.all span {
+  color: white;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: larger;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  scale: 1.06;
+  color: rgb(56, 125, 168);
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 900px) {
+  .all {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  .all span {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+}
+
+/* للشاشات الصغيرة جدًا (موبايلات أقل من 500px) */
+@media (max-width: 500px) {
+  .all {
+    padding: 10px;
+  }
+
+  .all span {
+    font-size: 1.5rem;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+}
