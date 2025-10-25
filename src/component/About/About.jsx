@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
-{/*import ceoImg from "../../asset/ceo.png"; // صورة المدير التنفيذي (يمكنك تغييرها)
-*/}
+
 function About() {
   return (
     <div className="about-container">
