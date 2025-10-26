@@ -88,7 +88,7 @@ function Services() {
       <section className="services-cta">
         <h2>هل ترغب في تحويل فكرتك إلى مشروع ناجح؟</h2>
         <p>تواصل معنا الآن للحصول على استشارة مجانية وخطة تنفيذ احترافية.</p>
-        <Link as={Link} to="/contact" className="cta-button">تواصل معنا</Link>
+        <Link to="/contact" className="cta-button">تواصل معنا</Link>
       </section>
 
     </div>
